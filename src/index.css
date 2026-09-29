@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-paper: 247 245 255;      /* #F7F5FF page background */
+  --color-surface: 255 255 255;    /* white cards */
+  --color-ink: 30 27 75;           /* #1E1B4B body text */
+  --color-line: 228 224 250;       /* #E4E0FA borders */
+
+  --color-mastery: 16 185 129;
+  --color-mastery-soft: 209 250 229;
+  --color-gap: 244 63 94;
+  --color-gap-soft: 255 228 230;
+  --color-primary: 99 102 241;
+  --color-primary-dark: 67 56 202;
+  --color-primary-soft: 224 231 255;
+  --color-accent: 245 158 11;
+  --color-accent-soft: 254 243 199;
+  --color-sky: 14 165 233;
+  --color-sky-soft: 224 242 254;
+  --color-violet: 168 85 247;
+  --color-violet-soft: 243 232 255;
+}
+
+.dark {
+  --color-paper: 13 13 24;         /* near-black page background */
+  --color-surface: 24 24 38;       /* dark cards */
+  --color-ink: 240 240 250;        /* near-white body text */
+  --color-line: 52 52 78;          /* dark borders */
+
+  --color-mastery: 52 211 153;
+  --color-mastery-soft: 6 61 46;
+  --color-gap: 251 113 133;
+  --color-gap-soft: 76 12 28;
+  --color-primary: 139 149 255;
+  --color-primary-dark: 199 205 255;
+  --color-primary-soft: 44 42 99;
+  --color-accent: 251 191 36;
+  --color-accent-soft: 69 46 8;
+  --color-sky: 56 189 248;
+  --color-sky-soft: 10 51 74;
+  --color-violet: 196 132 252;
+  --color-violet-soft: 55 22 92;
+}
+
+html {
+  font-size: 18.5px;
+}
+
+body {
+  background-color: rgb(var(--color-paper));
+  color: rgb(var(--color-ink));
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
